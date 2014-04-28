@@ -5,7 +5,8 @@
   "main": "ng-quote.js",
   "devDependencies": {
     "karma": "~0.10.9",
-    "karma-coverage": "~0.2.1"
+    "karma-coverage": "~0.2.1",
+    "karma-coveralls": "~0.1.4"
   },
   "scripts": {
     "test": "node_modules/.bin/karma start -c --single-run"
