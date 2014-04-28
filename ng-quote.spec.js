@@ -47,7 +47,8 @@ describe("This suite shall test ng-quote", function () {
 
 		$httpBackend.flush();
 
-		expect(elem.html()).toEqual('<!-- ngIf: !loading --><div ng-if="!loading" class="ng-scope ng-binding">This is a mocked quote!<br><div style="width: 100%; text-align: right;"><small class="ng-binding">Florian Loch</small></div></div><!-- end ngIf: !loading --><!-- ngIf: loading -->');
+		var node = angular.element(elem.find("div")[0]);
+		expect(node.html()).toEqual('This is a mocked quote!<br><div style="width: 100%; text-align: right;"><small class="ng-binding">Florian Loch</small></div>');
 	});
 
 	function compileAgainstRootScope(html) {
