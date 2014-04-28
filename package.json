@@ -9,6 +9,7 @@
     "karma-coveralls": "~0.1.4"
   },
   "scripts": {
+  	"preinstall": "npm install bower -g && bower install",
     "test": "node_modules/.bin/karma start -c --single-run"
   },
   "author": "Florian Loch",
