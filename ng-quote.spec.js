@@ -1,7 +1,7 @@
 describe("This suite shall test ng-quote", function () {
 	var $compile, $rootScope, $httpBackend, scope;
 	var quote = {
-		id: 42,
+				id: 42,
         quote: "This is a mocked quote!",
         author: "Florian Loch",
         permalink: "Who will access this quote?!?" 

@@ -15,7 +15,7 @@ angular.module("ng-quote", []).directive("ngquote", ["$http", function ($http) {
 				$scope.loading = false;
 			}).
 			error(function (data, status, headers, config) {
-				$scope.quote = $scope.loadingText;
+				$scope.quote = $scope.errorText;
 				$scope.author = "";
 				$scope.loading = false;
 			});
@@ -29,7 +29,7 @@ angular.module("ng-quote", []).directive("ngquote", ["$http", function ($http) {
 		},
 		template: template,
 		restrict: "E",
-        replace: true,
+    replace: true,
 	};
 }]);
 
